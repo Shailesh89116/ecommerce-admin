@@ -10,6 +10,11 @@ export default async function SetupLayout({
 }) {
   const { userId } = auth();
 
+  console.log(
+    userId
+  );
+  
+
   if (!userId) {
     redirect('/sign-in');
   }
